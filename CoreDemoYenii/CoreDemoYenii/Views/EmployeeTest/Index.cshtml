@@ -1,0 +1,22 @@
+﻿@using CoreDemoYenii.Controllers
+@model List<Class1>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<table class="table table-hover">
+    <tr>
+        <th>id</th>
+        <th>AdSoyad</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Name</td>
+        </tr>
+    }
+</table>
+

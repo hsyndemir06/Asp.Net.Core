@@ -1,0 +1,20 @@
+﻿@model EntityLayer.Concrete.Message2
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>EditBlog</h1>
+<br />
+<input type="hidden" asp-for="MessageID" />
+<br />
+@Html.Label("Mesaj baslgı")
+@Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+<br />
+@Html.Label("Mesaj iceriği")
+@Html.TextAreaFor(x => x.MessageDetails, 10, 3, new { @class = "form-control" })
+
+<br />
+
+<a href="/Message/Inbox" class="btn btn-primary">Mesajlara Don</a>
+

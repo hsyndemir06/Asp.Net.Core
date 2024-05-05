@@ -1,0 +1,22 @@
+﻿@using CoreDemoYenii.Models
+@model RoleUpdate
+
+
+@{
+    ViewData["Title"] = "UpdateRole";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>UpdateRole</h1>
+
+<form method="post">
+    <div class="form-group">
+        <input type="text" name="Id" value="@Model.ID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="Name" />
+    </div>
+
+
+    <button class="btn btn-outline-success">Rol Güncelle</button>
+</form>

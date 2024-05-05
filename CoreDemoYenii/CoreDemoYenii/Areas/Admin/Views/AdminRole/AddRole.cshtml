@@ -1,0 +1,22 @@
+﻿@using CoreDemoYenii.Models
+@model AddRoleModel
+
+@{
+    ViewData["Title"] = "AddRole";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>AddRole</h1>
+
+<form method="post">
+    <div class="form-group">
+
+        <input type="text" name="Name" placeholder="Rol Baslıgı" class="form-control" />
+    </div>
+
+    <div asp-validation-sumary="ModeOnly">
+
+    </div>
+
+    <button class="btn btn-info">Kaydet</button>
+</form>
